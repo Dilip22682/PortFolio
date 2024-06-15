@@ -1,0 +1,500 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.home {
+  height: 100%;
+  width: 100vw;
+  background-color: bisque;
+}
+.home-nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: orangered;
+  gap: 30px;
+  justify-content: flex-end;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  top: 25px;
+  animation: slide-nav 4s ease-in-out;
+}
+
+/* @keyframes slide-nav {
+  from {
+    transform: translate(-900px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+} */
+
+.home-nav a {
+  text-decoration: none;
+  color:rebeccapurple;
+  font-size: 22px;
+  height: 60%;
+  right: 25px;
+  transition: all 0.5s;
+  padding: 10px 5px 0 0;
+  /* top: 15px; */
+}
+.home-nav a:hover {
+  background-color: darkorange;
+  height: 80%;
+  color: rgb(16, 44, 229);
+}
+.btn {
+  transition: all 0.2s;
+}
+.home-nav button {
+  height: 40px;
+  width: 120px;
+  position: relative;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(15, 15, 116);
+  top: 5px;
+  right:25px;
+}
+.home-nav button:hover {
+  background-color: yellow;
+  color: rgb(10, 4, 198);
+  height: 43px;
+  width: 125px;
+  border-radius: 20px;
+}
+.pdf1 a{
+  font-size:14px;
+}
+
+.home-content {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+.home-content img {
+  position: relative;
+  display: inline-block;
+  top: 10px;
+  height: 570px;
+  width: 847px;
+  animation: slide1 2s ease-out;
+  /* box-shadow: 10px 10px 2px white; */
+}
+
+@keyframes slide1 {
+  from {
+    transform: translate(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+.home-text h3 {
+  top: -359px;
+  position: relative;
+  left: 735px;
+}
+
+.home-text h1 {
+  color: red;
+  position: relative;
+  top: 200px;
+  right: 100px;
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: para11 3s ease-in-out;
+}
+@keyframes para11 {
+  from {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-text h3 {
+  color: white;
+  position: absolute;
+  top: 321px;
+  left: 789px;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation: para13 3s ease-in-out 1s;
+}
+
+@keyframes para13 {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Second "about tag"===> */
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+}
+.about h1 {
+  position: relative;
+  display: inline-block;
+  top: 68px;
+  left: 700px;
+}
+.about-content {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+.head-2 {
+  position: relative;
+  top: 50px;
+  right: 150px;
+  height: 250px;
+  width: 40%;
+}
+
+.photo-33 img{
+  position: relative;
+  top: 102px;
+  width: 420px;
+  height: 450px;
+  
+}
+
+
+/* <!-- skills tag css started from here   */
+
+.skill {
+  width: 100%;
+  height: 165vh;
+  background-color: darkgray;
+  /* flex-wrap: wrap; */
+  /* display: flex; */
+  /* gap:20px; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
+}
+.skill h1 {
+  text-align: center;
+  font-size: 3.5em;
+  color: chocolate;
+  position: relative;
+  top: 45px;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: aqua;
+  box-shadow: 12px 15px 8px 13px rgb(34, 149, 195);
+  /* border: 2px solid; */
+  border-radius: 10%;
+  position: relative;
+  top: 50px;
+  left: 26px;
+  margin: 27px;
+  display: inline-block;
+  /* display: flex; */
+  text-align: auto;
+  /* flex-direction: row; */
+  /* justify-content: right; */
+  transition: all 0.2s ease-in;
+}
+.card:hover {
+  outline: 10px white solid;
+  width: 320px;
+  height: 420px;
+  transform: scale(1.02);
+}
+
+.card img {
+  position: relative;
+  top: 7px;
+  left: 18px;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.card h2 {
+  display: inline-block;
+  left: 106px;
+  font-size: 2rem;
+  top: -9px;
+  position: absolute;
+}
+hr {
+  height: 4px;
+  background-color: black;
+  margin-top: 26px;
+}
+.card span {
+  font-size: 19px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: absolute;
+  left: 10px;
+}
+.card-1 {
+  display: inline-block;
+  height: 20px;
+}
+.card-1 h2 {
+  font-size: 35px;
+  position: relative;
+  left: 33px;
+  top: -10px;
+  display: inline-block;
+}
+
+/* <!-- project tag css  started from here --> */
+
+.project-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(228, 183, 3);
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 5px; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+}
+.project {
+  width: 300px;
+  height: 440px;
+  background-color: aqua;
+  /* border: 2px solid; */
+  display: inline-block;
+  box-shadow: 14px 17px 10px 18px rgb(34, 149, 195);
+  border-radius: 10%;
+  position: relative;
+  /* left:- 26px; */
+  top: 140px;
+  margin: 15px;
+}
+
+.project-container span {
+  position: relative;
+  top: -399px;
+  z-index: 1;
+  left: 610px;
+  font-size: 3rem;
+  font-weight: 750;
+  color: brown;
+}
+.one {
+  position: relative;
+  left: -143px;
+  top: 0px;
+}
+.one img{
+  width: 265px;
+  height: 150px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left:15px;
+}
+.one h3{
+      position: relative;
+    top: 156px;
+    left: 74px;
+  
+}
+.one p{
+    position: relative;
+    top: 124px;
+    text-align: justify;
+    padding: 17px;
+}
+.btn-left{
+height: 27px;
+    width: 120px;
+    position: relative;
+    color: blueviolet;
+    top: 120px;
+    left: 25px;
+    background-color: wheat;
+    border-radius: 10px;
+    a{
+      text-decoration: none;
+      font-weight:750;
+    }
+
+}
+.btn-right{
+  height: 27px;
+    width: 106px;
+    position: relative;
+    color: blueviolet;
+    top: 120px;
+    left: 47px;
+    background-color: wheat;
+    border-radius: 10px;
+    a{
+      text-decoration: none;
+      font-weight:750;
+    }
+
+}
+.two {
+  position: relative;
+  left: -115px;
+}
+.three {
+  position: relative;
+  left: -80px;
+}
+.four {
+  position: relative;
+  left: -65px;
+}
+
+
+/* - Contact Information  css started from here--> */
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg");
+  background-size: cover;
+  transition: all 3s ease-in-out;
+  /* transform: scale(2); */
+}
+
+.form {
+  width: 30%;
+  height: 84%;
+  border-radius: 33px;
+  background-color: rgba(122, 202, 233, 0.433);
+  z-index: 1;
+
+  /* color: aqua; */
+  text-align: center;
+  /* text-decoration: underline; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 5%;
+  animation: hide-expand 2s ease 5s;
+}
+@keyframes hide-expand {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.form-Entry span {
+  position: relative;
+  /* align-self: flex-start; */
+  top: -65px;
+  font-size: 2rem;
+  color: rgb(9, 246, 246);
+  text-decoration: underline;
+}
+label {
+  width: 334px;
+  height: 45px;
+  margin: -1px 2px -3px 3px;
+}
+h5 {
+  font-size: 23px;
+  font-family: unset;
+  color: red;
+  height: 25px;
+  width: 329px;
+  top: -24px;
+  position: relative;
+  /* left: -21px; */
+  /* border: 2px solid; */
+}
+.data input[type="text"] {
+  padding: 11px;
+  border-radius: 12px;
+  width: 64%;
+}
+.data input[type="email"] {
+  padding: 11px;
+  border-radius: 12px;
+  width: 64%;
+}
+.data input[type="number"] {
+  padding: 11px;
+  border-radius: 12px;
+  width: 64%;
+}
+.buttom {
+  position: relative;
+  position: relative;
+  top: 67px;
+  width: 200px;
+  height: 42px;
+  border-radius: 25px;
+  font-size: 15px;
+  background-color: rgb(42, 241, 241);
+  box-shadow: 10px 8px 5px 6px #7affff;
+}
+
+.footer-icon {
+  width: 100%;
+  height: 15vh;
+background:rgba(61, 194, 246, 0.918);
+  
+}
+
+.App{
+  display: flex;
+  gap:40px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.App{
+  position:relative;
+  top:25px;
+}
+
+.App a>svg{
+  /* background-color: aliceblue; */
+  height: 35px;
+  width: 35px;
+  color: aliceblue;
+  /* border-radius:15px; */
+}
+.App a>svg:hover{
+  color: blue;
+}
